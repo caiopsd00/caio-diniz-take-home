@@ -4,7 +4,37 @@ This project is developed as part of the Cloud Humans take-home assignment. The 
 
 ---
 
-## 🚀 How to Run the Project
+## 🚀 Run with Docker
+
+You can run this project entirely using Docker, without the need to install Node.js or npm on your machine. Follow these steps:
+
+### Prerequisites
+1. Install [Docker](https://www.docker.com/get-started) and [Docker Compose](https://docs.docker.com/compose/install/).
+2. Ensure Docker is running.
+
+### Steps to Run the Application
+
+1. **Build the Docker Image**:
+   ```bash
+   docker-compose build
+
+1. **Start the Application**:
+   ```bash
+   docker-compose up
+
+1. **Access the Application:** The API will be available at:
+   ```bash
+   http://localhost:3000
+
+1. **Run Tests:** To run the automated tests within the container:
+   ```bash
+   docker-compose run --rm app npm test
+
+1. **Stop the Application:** To stop and remove the running containers:
+   ```bash
+   docker-compose down
+
+## 🚀 How to Run the Project (without docker)
 
 ### Prerequisites
 
